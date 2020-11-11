@@ -2,9 +2,9 @@ create schema estoque;
 
 use estoque;
 
-create user 'user'@'localhost' identified by 'fatec';
+create user 'teste'@'localhost' identified by 'fatec';
 
-grant select, insert, delete, update on estoque.* to user@'localhost';
+grant select, insert, delete, update on estoque.* to teste@'localhost';
 
 create table mto_moto (
   mto_id bigint unsigned not null auto_increment,
