@@ -1,10 +1,10 @@
-create schema bd;
+create schema cetriolo;
+ 
+use cetriolo;
 
-use bd;
+create user 'user'@'localhost' identified by 'fatec';
 
-create user 'teste'@'localhost' identified by 'fatec';
-
-grant select, insert, delete, update on bd.* to teste@'localhost';
+grant select, insert, delete, update on cetriolo.* to user@'localhost';
 
 create table mto_moto (
   mto_id bigint unsigned not null auto_increment,
