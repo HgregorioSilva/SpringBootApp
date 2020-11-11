@@ -1,10 +1,10 @@
-create schema estoque;
+create schema bd;
 
-use estoque;
+use bd;
 
 create user 'teste'@'localhost' identified by 'fatec';
 
-grant select, insert, delete, update on estoque.* to teste@'localhost';
+grant select, insert, delete, update on bd.* to teste@'localhost';
 
 create table mto_moto (
   mto_id bigint unsigned not null auto_increment,
