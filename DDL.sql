@@ -2,7 +2,7 @@ create schema estoque;
 
 use estoque;
 
-create user 'user'@'localhost' identified by 'pass123';
+create user 'user'@'localhost' identified by 'fatec';
 
 grant select, insert, delete, update on estoque.* to user@'localhost';
 
