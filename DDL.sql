@@ -4,7 +4,7 @@ use estoque;
 
 create user 'user'@'localhost' identified by 'pass123';
 
-grant select, insert, delete, update on anotacao.* to user@'localhost';
+grant select, insert, delete, update on estoque.* to user@'localhost';
 
 create table mto_moto (
   mto_id bigint unsigned not null auto_increment,
